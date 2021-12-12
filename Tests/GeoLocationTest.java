@@ -1,6 +1,5 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class GeoLocationTest
 {
@@ -13,21 +12,21 @@ class GeoLocationTest
     void x()
     {
         double xCheck=GeoLoc.x();
-        assertEquals(xCheck,1);
+        Assertions.assertEquals(xCheck,1);
     }
 
     @Test
     void y()
     {
         double yCheck=GeoLoc.y();
-        assertEquals(yCheck,2);
+        Assertions.assertEquals(yCheck,2);
     }
 
     @Test
     void z()
     {
         double zCheck=GeoLoc.z();
-        assertEquals(zCheck,3);
+        Assertions.assertEquals(zCheck,3);
     }
 
     @Test
@@ -38,7 +37,7 @@ class GeoLocationTest
         double z1= 2;
         GeoLocation_class GeoLoc1 = new GeoLocation_class(x1, y1, z1);
         double distToCheck=GeoLoc1.distance(GeoLoc);
-        assertEquals(distToCheck,1.73);
+        Assertions.assertEquals(distToCheck,1.73);
         // Answer by the website:https://www.engineeringtoolbox.com/distance-relationship-between-two-points-d_1854.html
 
 

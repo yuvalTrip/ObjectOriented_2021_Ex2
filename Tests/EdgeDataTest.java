@@ -1,6 +1,5 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 class EdgeDataTest
 {
     double w=10.5;
@@ -11,19 +10,19 @@ class EdgeDataTest
     @Test
     void getSrc()
     {
-        assertEquals(edgeCheck.getSrc(),4);
+        Assertions.assertEquals(edgeCheck.getSrc(),4);
     }
 
     @Test
     void getDest()
     {
-        assertEquals(edgeCheck.getDest(),8);
+        Assertions.assertEquals(edgeCheck.getDest(),8);
     }
 
     @Test
     void getWeight()
     {
-        assertEquals(edgeCheck.getDest(),10.5);
+        Assertions.assertEquals(edgeCheck.getDest(),10.5);
     }
 
     @Test

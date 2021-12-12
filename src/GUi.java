@@ -1,7 +1,5 @@
 import api.*;
-import api.EdgeData;
-import api.NodeData;
-//import src.*;//.DirectedWeightedGraph_ans;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -11,6 +9,8 @@ import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
+
+
 public class GUi extends JFrame implements ActionListener, Serializable {
     /**
      *
@@ -19,6 +19,9 @@ public class GUi extends JFrame implements ActionListener, Serializable {
 
     //delete toString
 
+    public static void runGUI(DirectedWeightedGraph_ans gr) {
+        new GUi(gr);
+    }
 
     //**params**
     private DirectedWeightedGraph_ans gr;
@@ -35,9 +38,6 @@ public class GUi extends JFrame implements ActionListener, Serializable {
         initGUI();
     }
 
-    public static void runGUI(DirectedWeightedGraph_ans gr) {
-        new GUi(gr);
-    }
     //**functions**
 
     public void setGraph_Algo(DirectedWeightedGraphAlgorithms_ans ga) {
@@ -312,7 +312,7 @@ public class GUi extends JFrame implements ActionListener, Serializable {
                     public void actionPerformed(ActionEvent arg0) {
                         String file_name = textfieldu.getText();
                         System.out.println(file_name);
-                        DirectedWeightedGraphAlgorithms_ans ga1 = new DirectedWeightedGraphAlgorithms_ans();
+                        DirectedWeightedGraphAlgorithms_ans ga1 = new DirectedWeightedGraphAlgorithms_ans ();
                         //ga1.init(file_name);
                         ga1.save(file_name);
                         setGraph_Algo(ga1);
@@ -366,7 +366,7 @@ public class GUi extends JFrame implements ActionListener, Serializable {
                 g.setColor(Color.black);
                 Graphics2D g3 = (Graphics2D) g;
                 g3.setStroke(new BasicStroke(2));
-                g.drawString((Double.toString(dest.getW())), (int)((loc.x()+loc1.x())/2),(int)((loc.y()+loc1.y())/2));
+                g.drawString((Double.toString(dest.getWeight())), (int)((loc.x()+loc1.x())/2),(int)((loc.y()+loc1.y())/2));
 
                 //mark src
                 g.setColor(Color.RED);
@@ -409,4 +409,6 @@ public class GUi extends JFrame implements ActionListener, Serializable {
             return gr.Edges.get(node_id).values();
         return null;
     }
+
+
 }

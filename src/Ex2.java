@@ -7,7 +7,7 @@ import api.DirectedWeightedGraphAlgorithms;
 public class Ex2 {
     /**
      * This static function will be used to test your implementation
-    // * @param json_file - a json file (e.g., G1.json - G3.gson)
+     // * @param json_file - a json file (e.g., G1.json - G3.gson)
      * @return
      */
 
@@ -18,6 +18,10 @@ public class Ex2 {
         graphAlgo.init(ans);//Init the graph on which this set of algorithms operates on.
         graphAlgo.load(json_file);//load this json_file
         return graphAlgo.getGraph();//Return the underlying graph of which this class works.
+
+        //DirectedWeightedGraphAlgorithms graph = new DirectedWeightedGraphAlgorithmsClass();
+        //        graph.load(json_file);
+        //        return graph.getGraph();
 
     }
     /**
@@ -39,14 +43,18 @@ public class Ex2 {
      *
      */
     public static void runGUI(String json_file) {
-        DirectedWeightedGraphAlgorithms alg = getGrapgAlgo(json_file);
+        DirectedWeightedGraphAlgorithms_ans alg = (DirectedWeightedGraphAlgorithms_ans) getGrapgAlgo(json_file);
         // ****** Add your code here ******
         GUi.runGUI((DirectedWeightedGraph_ans)alg.getGraph());
+
+        // DirectedWeightedGraphAlgorithms alg = getGrapgAlgo(json_file);
+        //        graphWindow g = new graphWindow(alg);
     }
 
-    public static void main(String[] args)
-    {
-        runGUI(args[0]);
-        //runGUI("data/G1.json");
+    public static void main(String[] args) {
+        //runGUI(args[0]);
+        runGUI("G1.json");
+        //String file=args[0];
+        //runGUI(file);
     }
 }

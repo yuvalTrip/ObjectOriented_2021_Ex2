@@ -26,7 +26,7 @@ public class Edge implements api.EdgeData {
     }
 
     @Override
-    public double getW() {
+    public double getWeight() {
         return this.w;
     }
 
@@ -34,7 +34,7 @@ public class Edge implements api.EdgeData {
     public String getInfo() {
         return this.info;
     }
-                //"src-" + this.src.getInfo() +"\n"+ "weight-" + this.weight + "\n" + "dest-" +this.dest.getInfo();
+    //"src-" + this.src.getInfo() +"\n"+ "weight-" + this.weight + "\n" + "dest-" +this.dest.getInfo();
 
 
     @Override
@@ -47,7 +47,7 @@ public class Edge implements api.EdgeData {
 //        String[] arr_dest= temp1[2].split("-");
 //        this.dest.setInfo(arr_dest[1]);
         this.info= info;
-        }
+    }
 
 
 

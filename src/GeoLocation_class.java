@@ -19,10 +19,7 @@ public class GeoLocation_class implements api.GeoLocation {
     public double y(){
         return this.y;
     }
-    public double z(){
-        return this.z;
-
-    }
+    public double z(){return this.z; }
     public int ix() {return (int)x;}
     public int iy() {return (int)y;}
     public int iz() {return (int)z;}

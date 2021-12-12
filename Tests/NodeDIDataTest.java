@@ -1,6 +1,5 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class NodeDIDataTest {
     String info="";
@@ -16,13 +15,13 @@ class NodeDIDataTest {
     @Test
     void getKey()
     {
-        assertEquals(nodeDICheck.getKey(),4);
+        Assertions.assertEquals(nodeDICheck.getKey(),4);
     }
 
     @Test
     void getLocation()
     {
-        assertEquals(nodeDICheck.getLocation(),GeoLoc);
+        Assertions.assertEquals(nodeDICheck.getLocation(),GeoLoc);
     }
 
     @Test
@@ -33,20 +32,20 @@ class NodeDIDataTest {
         double z= 3;
         GeoLocation_class GeoLocCheck = new GeoLocation_class(x, y, z);
         nodeDICheck.setLocation(GeoLoc);
-        assertEquals(nodeDICheck.getLocation(),GeoLocCheck);
+        Assertions.assertEquals(nodeDICheck.getLocation(),GeoLocCheck);
     }
 
     @Test
     void getWeight()
     {
-        assertEquals(nodeDICheck.getWeight(),10);
+        Assertions.assertEquals(nodeDICheck.getWeight(),10);
     }
 
     @Test
     void setWeight()
     {
         nodeDICheck.setWeight(5);
-        assertEquals(nodeDICheck.getWeight(),5);
+        Assertions.assertEquals(nodeDICheck.getWeight(),5);
     }
 
     @Test
@@ -56,7 +55,7 @@ class NodeDIDataTest {
         //        return "id: " +this.id +" pos: " +g.toString() +" weight: " +this.weight;
         //    }
         String ToCheck= "id: 4 pos: 3,3,3 weight: 5";//////////////////////////////////////////////////////
-        assertEquals(nodeDICheck.getInfo(),ToCheck);
+        Assertions.assertEquals(nodeDICheck.getInfo(),ToCheck);
     }
 
     @Test
@@ -64,19 +63,19 @@ class NodeDIDataTest {
     {
         String ToSet= "id: 0 pos: 0,0,0 weight: 0";////////////////////////////////////////////////////////
         nodeDICheck.setInfo(ToSet);
-        assertEquals(nodeDICheck.getInfo(),ToSet);
+        Assertions.assertEquals(nodeDICheck.getInfo(),ToSet);
     }
 
     @Test
     void getTag()
     {
-        assertEquals(nodeDICheck.getTag(),9);
+        Assertions.assertEquals(nodeDICheck.getTag(),9);
     }
 
     @Test
     void setTag()
     {
         nodeDICheck.setTag(0);
-        assertEquals(nodeDICheck.getTag(),0);
+        Assertions.assertEquals(nodeDICheck.getTag(),0);
     }
 }

@@ -46,7 +46,7 @@ public class NodeDI implements NodeData {
         double y= p.y();
         double z= p.z();
         this.pos = new GeoLocation_class(x,y,z);
-        }
+    }
 
 
     @Override
@@ -64,7 +64,7 @@ public class NodeDI implements NodeData {
     public String getInfo() {
 
         return this.info;
-                //"id: " +this.id +" pos: " +g.toString() +" weight: " +this.weight;
+        //"id: " +this.id +" pos: " +g.toString() +" weight: " +this.weight;
     }
 
 
@@ -75,7 +75,7 @@ public class NodeDI implements NodeData {
 //        String[] temp_g= temp[4].split(",");
 //        this.g= new GeoLocation_class(Double.parseDouble(temp_g[0]),Double.parseDouble(temp_g[1]),Double.parseDouble(temp_g[2]));
 //        this.weight= Double.parseDouble(temp[7]);
-    this.info= s;
+        this.info= s;
     }
 
     @Override
@@ -88,5 +88,4 @@ public class NodeDI implements NodeData {
         this.tag=t;
 
     }
-
 }
