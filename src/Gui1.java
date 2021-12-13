@@ -14,7 +14,7 @@
 //import java.util.ArrayList;
 //import java.util.Iterator;
 //
-//class GUI extends JFrame implements ActionListener {
+//class Gui1 extends JFrame implements ActionListener {
 //    JPanel functionPanel;
 //    JButton centerb;
 //    JButton clear;
@@ -47,6 +47,8 @@
 //    ArrayList<NodeData> path;
 //    ArrayList<NodeData> tsppath;
 //    int centercounter = 0;
+//
+//
 //
 //
 //    public GUI(DirectedWeightedGraph_ans gr) {
