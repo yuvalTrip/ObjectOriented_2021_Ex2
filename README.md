@@ -40,7 +40,7 @@ In order to do this, we have to implement 3 class:  NodeData, EdgeData, and GeaL
 - **weight-** the weight associated with this edge
 - **tag and info**  
 
-# ***GeaLocation:***   
+# ***GeoLocation:***   
 represent the location of (x,y,z), and distance between each teo of them. 
 
 
