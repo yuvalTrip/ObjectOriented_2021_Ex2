@@ -22,7 +22,7 @@ class EdgeDataTest
     @Test
     void getWeight()
     {
-        Assertions.assertEquals(edgeCheck.getDest(),10.5);
+        Assertions.assertEquals(edgeCheck.getWeight(),10.5);
     }
 
     @Test
@@ -38,13 +38,15 @@ class EdgeDataTest
     @Test
     void getTag()
     {
-
+        edgeCheck.setTag(1);
+        Assertions.assertEquals(edgeCheck.getTag(),1);
     }
 
     @Test
     void setTag()
     {
-
+        edgeCheck.setTag(1);
+        Assertions.assertEquals(edgeCheck.getTag(),1);
     }
 
 }

@@ -115,10 +115,10 @@ class DirectedWeightedGraphAlgorithmsTest {
     void center() {
         DirectedWeightedGraphAlgorithms check = new DirectedWeightedGraphAlgorithms_ans();
         //check.load("G3.json");
-        check.load("1000Nodes.json");
+        check.load("G1.json");
         int CenterOfG1 = check.center().getKey();
         System.out.println(CenterOfG1);
-        Assertions.assertEquals(0, CenterOfG1);
+        Assertions.assertEquals(8, CenterOfG1);
     }
 
     @Test

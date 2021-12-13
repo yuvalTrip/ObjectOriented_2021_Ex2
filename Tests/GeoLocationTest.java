@@ -37,7 +37,7 @@ class GeoLocationTest
         double z1= 2;
         GeoLocation_class GeoLoc1 = new GeoLocation_class(x1, y1, z1);
         double distToCheck=GeoLoc1.distance(GeoLoc);
-        Assertions.assertEquals(distToCheck,1.73);
+        Assertions.assertEquals(distToCheck,1.7320508075688772);
         // Answer by the website:https://www.engineeringtoolbox.com/distance-relationship-between-two-points-d_1854.html
 
 
